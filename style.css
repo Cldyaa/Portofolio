@@ -607,23 +607,154 @@ body {
             color: var(--muted);
         }
 
-        /* About Text Content */
-        .about-content {
+        /* About Paper Sheet Wrapper (Torn Paper + 4 Washi Tapes) */
+        .about-paper-wrapper {
+            position: relative;
             flex: 1;
             min-width: 0;
             max-width: 720px;
+            margin: 14px 0;
+            filter: drop-shadow(0 16px 28px rgba(35, 52, 40, 0.11)) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.05));
+            transform: rotate(0.4deg);
+            transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .about-paper-wrapper:hover {
+            transform: rotate(0deg) translateY(-2px);
+        }
+
+        /* 4 Sudut Selotip / Washi Tape */
+        .washi-tape {
+            position: absolute;
+            width: 100px;
+            height: 28px;
+            background: rgba(238, 233, 216, 0.78);
+            backdrop-filter: blur(2px);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), inset 0 0 4px rgba(255, 255, 255, 0.6);
+            z-index: 10;
+            pointer-events: none;
+            /* Ujung selotip bergerigi seperti sobekan selotip asli */
+            clip-path: polygon(
+                0% 0%, 100% 0%,
+                96% 25%, 100% 50%, 96% 75%, 100% 100%,
+                0% 100%,
+                4% 75%, 0% 50%, 4% 25%
+            );
+        }
+
+        .tape-tl {
+            top: -12px;
+            left: -18px;
+            transform: rotate(-36deg);
+        }
+
+        .tape-tr {
+            top: -12px;
+            right: -18px;
+            transform: rotate(34deg);
+        }
+
+        .tape-bl {
+            bottom: -12px;
+            left: -18px;
+            transform: rotate(35deg);
+        }
+
+        .tape-br {
+            bottom: -12px;
+            right: -18px;
+            transform: rotate(-35deg);
+        }
+
+        /* Lembaran Kertas dengan Sobekan di Semua Sisi (Torn Paper Note) */
+        .torn-paper-note {
+            position: relative;
+            background: #faf7ed;
+            background-image: 
+                radial-gradient(ellipse at 85% 15%, rgba(255, 255, 255, 0.8), transparent 60%),
+                linear-gradient(rgba(49, 91, 67, 0.045) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 30px;
+            padding: 44px 38px 36px;
+            border-radius: 3px;
+            box-shadow: inset 0 0 38px rgba(215, 206, 180, 0.35);
+            /* Sobekan kertas bergerigi alami (ragged torn paper edge) */
+            clip-path: polygon(
+                0% 4px, 3% 1px, 6% 4px, 10% 1px, 14% 4px, 18% 1px, 22% 3px, 27% 0px, 32% 4px, 37% 1px, 42% 4px, 47% 0px, 52% 3px, 57% 1px, 62% 4px, 67% 0px, 72% 3px, 77% 1px, 82% 4px, 87% 1px, 92% 4px, 96% 0px, 100% 3px,
+                99.6% 7%, 100% 14%, 99.5% 22%, 100% 30%, 99.4% 39%, 100% 48%, 99.5% 57%, 100% 66%, 99.4% 75%, 100% 84%, 99.5% 92%, 100% 97%,
+                98% 100%, 94% 97%, 90% 100%, 86% 98%, 82% 100%, 77% 97%, 72% 100%, 67% 98%, 62% 100%, 57% 97%, 52% 100%, 47% 98%, 42% 100%, 37% 97%, 32% 100%, 27% 98%, 22% 100%, 17% 97%, 12% 100%, 7% 98%, 3% 100%, 0% 97%,
+                0.5% 91%, 0% 83%, 0.6% 74%, 0% 65%, 0.5% 56%, 0% 47%, 0.6% 38%, 0% 29%, 0.5% 20%, 0% 11%
+            );
+        }
+
+        .about-content {
             margin: 0;
-            background: var(--card);
-            padding: 40px;
-            border-radius: 20px;
-            border: 1px solid rgba(49, 91, 67, 0.12);
-            box-shadow: 0 12px 30px rgba(40, 55, 42, 0.07);
         }
 
         .about-content p {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
+            font-size: 1.05rem;
+            margin-bottom: 16px;
             color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .about-content .about-lead {
+            font-size: 1.15rem;
+            color: #1f3726;
+            margin-bottom: 12px;
+        }
+
+        .about-content .about-sublead {
+            margin-bottom: 22px;
+        }
+
+        /* Fun Facts Section */
+        .fun-facts-wrapper {
+            margin: 22px 0;
+        }
+
+        .fun-fact-note {
+            background: #eef4ec;
+            border-left: 4px solid var(--green);
+            border-radius: 12px;
+            padding: 14px 18px;
+            box-shadow: 0 4px 14px rgba(49, 91, 67, 0.06);
+            border-top: 1px solid rgba(49, 91, 67, 0.12);
+            border-right: 1px solid rgba(49, 91, 67, 0.12);
+            border-bottom: 1px solid rgba(49, 91, 67, 0.12);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .fun-fact-note:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(49, 91, 67, 0.1);
+        }
+
+        .fun-fact-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .fun-fact-tag {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            color: var(--green);
+            background: rgba(49, 91, 67, 0.12);
+            padding: 3px 9px;
+            border-radius: 999px;
+        }
+
+        .fun-fact-heart {
+            font-size: 1.1rem;
+        }
+
+        .fun-fact-note p {
+            margin: 0;
+            font-size: 0.96rem;
+            color: #243e2d;
+            line-height: 1.5;
         }
 
         .tech-group h3,
@@ -1960,11 +2091,25 @@ body {
                 gap: 36px;
             }
 
-            .about-content {
+            .about-paper-wrapper {
                 width: 100%;
                 max-width: 100%;
-                padding: 30px 22px;
+                margin: 10px 0;
             }
+
+            .torn-paper-note {
+                padding: 38px 24px 28px;
+            }
+
+            .washi-tape {
+                width: 75px;
+                height: 22px;
+            }
+
+            .tape-tl { top: -8px; left: -8px; }
+            .tape-tr { top: -8px; right: -8px; }
+            .tape-bl { bottom: -8px; left: -8px; }
+            .tape-br { bottom: -8px; right: -8px; }
 
             .sticky-note {
                 flex-basis: min(78vw, 300px);
