@@ -671,8 +671,9 @@ body {
             position: relative;
             background: #faf7ed;
             background-image: 
-                radial-gradient(ellipse at 85% 15%, rgba(255, 255, 255, 0.85), transparent 60%);
-            background-size: 100% 100%;
+                radial-gradient(ellipse at 85% 15%, rgba(255, 255, 255, 0.85), transparent 60%),
+                linear-gradient(rgba(49, 91, 67, 0.08) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 32px;
             padding: 44px 38px 36px;
             border-radius: 3px;
             box-shadow: inset 0 0 38px rgba(215, 206, 180, 0.35);
@@ -706,54 +707,90 @@ body {
             margin-bottom: 22px;
         }
 
-        /* Fun Facts Section */
-        .fun-facts-wrapper {
-            margin: 22px 0;
-        }
-
-        .fun-fact-note {
-            background: #eef4ec;
-            border-left: 4px solid var(--green);
-            border-radius: 12px;
-            padding: 14px 18px;
-            box-shadow: 0 4px 14px rgba(49, 91, 67, 0.06);
-            border-top: 1px solid rgba(49, 91, 67, 0.12);
-            border-right: 1px solid rgba(49, 91, 67, 0.12);
-            border-bottom: 1px solid rgba(49, 91, 67, 0.12);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .fun-fact-note:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 18px rgba(49, 91, 67, 0.1);
-        }
-
-        .fun-fact-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        /* Mini Sticky Notes Grid (Dua Kartu Dipisah Rapi) */
+        .mini-notes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 28px;
             margin-bottom: 8px;
         }
 
-        .fun-fact-tag {
+        .mini-sticky-note {
+            position: relative;
+            padding: 22px 20px 18px;
+            border-radius: 12px;
+            box-shadow: 0 10px 22px rgba(35, 52, 40, 0.08);
+            transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease;
+        }
+
+        .mini-sticky-note .note-pin {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.15rem;
+            filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.25));
+        }
+
+        .note-green {
+            background: #edf5eb;
+            border: 1px solid rgba(49, 91, 67, 0.22);
+            transform: rotate(-1.5deg);
+        }
+
+        .note-pink {
+            background: #fdf1f4;
+            border: 1px solid rgba(200, 100, 130, 0.22);
+            transform: rotate(1.5deg);
+        }
+
+        .mini-sticky-note:hover {
+            transform: rotate(0deg) translateY(-4px);
+            box-shadow: 0 14px 28px rgba(35, 52, 40, 0.12);
+        }
+
+        .note-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .note-green .note-tag {
             font-size: 0.72rem;
             font-weight: 800;
             letter-spacing: 0.08em;
-            color: var(--green);
+            color: #245738;
             background: rgba(49, 91, 67, 0.12);
-            padding: 3px 9px;
+            padding: 3px 10px;
             border-radius: 999px;
         }
 
-        .fun-fact-heart {
-            font-size: 1.1rem;
+        .note-pink .note-tag {
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            color: #9c2d58;
+            background: rgba(180, 60, 100, 0.12);
+            padding: 3px 10px;
+            border-radius: 999px;
         }
 
-        .fun-fact-note p {
+        .note-icon {
+            font-size: 1.15rem;
+        }
+
+        .mini-sticky-note p {
             margin: 0;
-            font-size: 0.96rem;
-            color: #243e2d;
-            line-height: 1.5;
+            font-size: 0.95rem;
+            line-height: 1.55;
+            color: #223c2a;
+        }
+
+        .note-pink .note-quote {
+            color: #4a2835;
+            font-style: italic;
         }
 
         .tech-group h3,
