@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cindy Claudia Arsyaningrum - Portfolio</title>
+    <meta name="description" content="Portfolio Cindy Claudia Arsyaningrum, siswi X RPL SMKN 6 Jember. Berisi project web, dasar pemrograman, skill teknologi, dan perjalanan belajar.">
+    <link rel="preload" href="Assets/image.webp" as="image" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none;" aria-hidden="true">
+<defs>
+<symbol id="icon-html5" viewBox="0 0 128 128">
+<path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"/><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"/><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"/><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"/>
+</symbol>
+<symbol id="icon-css3" viewBox="0 0 128 128">
+<path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"/><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"/><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"/><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"/><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"/><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"/>
+</symbol>
+<symbol id="icon-javascript" viewBox="0 0 128 128">
+<path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"/><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"/>
+</symbol>
+<symbol id="icon-php" viewBox="0 0 128 128">
+<path fill="url(#a)" d="M0 64c0 18.593 28.654 33.667 64 33.667 35.346 0 64-15.074 64-33.667 0-18.593-28.655-33.667-64-33.667C28.654 30.333 0 45.407 0 64Z"/><path fill="#777bb3" d="M64 95.167c33.965 0 61.5-13.955 61.5-31.167 0-17.214-27.535-31.167-61.5-31.167S2.5 46.786 2.5 64c0 17.212 27.535 31.167 61.5 31.167Z"/><path d="M34.772 67.864c2.793 0 4.877-.515 6.196-1.53 1.306-1.006 2.207-2.747 2.68-5.175.44-2.27.272-3.854-.5-4.71-.788-.874-2.493-1.317-5.067-1.317h-4.464l-2.473 12.732zM20.173 83.547a.694.694 0 0 1-.68-.828l6.557-33.738a.695.695 0 0 1 .68-.561h14.134c4.442 0 7.748 1.206 9.827 3.585 2.088 2.39 2.734 5.734 1.917 9.935-.333 1.711-.905 3.3-1.7 4.724a15.818 15.818 0 0 1-3.128 3.92c-1.531 1.432-3.264 2.472-5.147 3.083-1.852.604-4.232.91-7.07.91h-5.724l-1.634 8.408a.695.695 0 0 1-.682.562z"/><path fill="#fff" d="M34.19 55.826h3.891c3.107 0 4.186.682 4.553 1.089.607.674.723 2.097.331 4.112-.439 2.257-1.253 3.858-2.42 4.756-1.194.92-3.138 1.386-5.773 1.386h-2.786l2.205-11.342zm6.674-8.1H26.731a1.39 1.39 0 0 0-1.364 1.123L18.81 82.588a1.39 1.39 0 0 0 1.363 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.151c2.912 0 5.364-.318 7.287-.944 1.977-.642 3.796-1.731 5.406-3.237a16.522 16.522 0 0 0 3.259-4.087c.831-1.487 1.429-3.147 1.775-4.931.86-4.423.161-7.964-2.076-10.524-2.216-2.537-5.698-3.823-10.349-3.823zM30.301 68.557h4.471c2.963 0 5.17-.557 6.62-1.675 1.451-1.116 2.428-2.98 2.938-5.591.485-2.508.264-4.277-.665-5.308-.931-1.03-2.791-1.546-5.584-1.546h-5.036l-2.743 14.12m10.563-19.445c4.252 0 7.353 1.117 9.303 3.348 1.95 2.232 2.536 5.347 1.76 9.346-.322 1.648-.863 3.154-1.625 4.518-.764 1.366-1.76 2.614-2.991 3.747-1.468 1.373-3.097 2.352-4.892 2.935-1.794.584-4.08.875-6.857.875h-6.296l-1.743 8.97h-7.35l6.558-33.739h14.133"/><path d="M69.459 74.577a.694.694 0 0 1-.682-.827l2.9-14.928c.277-1.42.209-2.438-.19-2.87-.245-.263-.979-.704-3.15-.704h-5.256l-3.646 18.768a.695.695 0 0 1-.683.56h-7.29a.695.695 0 0 1-.683-.826l6.558-33.739a.695.695 0 0 1 .682-.561h7.29a.695.695 0 0 1 .683.826L64.41 48.42h5.653c4.307 0 7.227.758 8.928 2.321 1.733 1.593 2.275 4.14 1.608 7.573l-3.051 15.702a.695.695 0 0 1-.682.56h-7.407z"/><path fill="#fff" d="M65.31 38.755h-7.291a1.39 1.39 0 0 0-1.364 1.124l-6.557 33.738a1.39 1.39 0 0 0 1.363 1.654h7.291a1.39 1.39 0 0 0 1.364-1.124l3.537-18.205h4.682c2.168 0 2.624.463 2.641.484.132.14.305.795.019 2.264l-2.9 14.927a1.39 1.39 0 0 0 1.364 1.654h7.408a1.39 1.39 0 0 0 1.363-1.124l3.051-15.7c.715-3.686.103-6.45-1.82-8.217-1.836-1.686-4.91-2.505-9.398-2.505h-4.81l1.421-7.315a1.39 1.39 0 0 0-1.364-1.655zm0 1.39-1.743 8.968h6.496c4.087 0 6.907.714 8.457 2.14 1.553 1.426 2.017 3.735 1.398 6.93l-3.052 15.699h-7.407l2.901-14.928c.33-1.698.208-2.856-.365-3.474-.573-.617-1.793-.926-3.658-.926h-5.829l-3.756 19.327H51.46l6.558-33.739h7.292z"/><path d="M92.136 67.864c2.793 0 4.878-.515 6.198-1.53 1.304-1.006 2.206-2.747 2.679-5.175.44-2.27.273-3.854-.5-4.71-.788-.874-2.493-1.317-5.067-1.317h-4.463l-2.475 12.732zM77.54 83.547a.694.694 0 0 1-.682-.828l6.557-33.738a.695.695 0 0 1 .682-.561H98.23c4.442 0 7.748 1.206 9.826 3.585 2.089 2.39 2.734 5.734 1.917 9.935a15.878 15.878 0 0 1-1.699 4.724 15.838 15.838 0 0 1-3.128 3.92c-1.53 1.432-3.265 2.472-5.147 3.083-1.852.604-4.232.91-7.071.91h-5.723l-1.633 8.408a.695.695 0 0 1-.683.562z"/><path fill="#fff" d="M91.555 55.826h3.891c3.107 0 4.186.682 4.552 1.089.61.674.724 2.097.333 4.112-.44 2.257-1.254 3.858-2.421 4.756-1.195.92-3.139 1.386-5.773 1.386h-2.786l2.204-11.342zm6.674-8.1H84.096a1.39 1.39 0 0 0-1.363 1.123l-6.558 33.739a1.39 1.39 0 0 0 1.364 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.15c2.911 0 5.364-.318 7.286-.944 1.978-.642 3.797-1.731 5.408-3.238a16.52 16.52 0 0 0 3.258-4.086c.832-1.487 1.428-3.147 1.775-4.931.86-4.423.162-7.964-2.076-10.524-2.216-2.537-5.697-3.823-10.35-3.823zM87.666 68.557h4.47c2.964 0 5.17-.557 6.622-1.675 1.45-1.116 2.428-2.98 2.936-5.591.487-2.508.266-4.277-.665-5.308-.93-1.03-2.791-1.546-5.583-1.546h-5.035Zm10.563-19.445c4.251 0 7.354 1.117 9.303 3.348 1.95 2.232 2.537 5.347 1.759 9.346-.32 1.648-.862 3.154-1.624 4.518-.763 1.366-1.76 2.614-2.992 3.747-1.467 1.373-3.097 2.352-4.892 2.935-1.793.584-4.078.875-6.856.875h-6.295l-1.745 8.97h-7.35l6.558-33.739h14.133"/><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(84.04136 0 0 84.04136 38.426 42.169)" gradientUnits="userSpaceOnUse"><stop stop-color="#AEB2D5"/><stop offset=".3" stop-color="#AEB2D5"/><stop offset=".75" stop-color="#484C89"/><stop offset="1" stop-color="#484C89"/></radialGradient></defs>
+</symbol>
+<symbol id="icon-laravel" viewBox="0 0 128 128">
+<path fill="#f0513f" d="M27.271.11c-.2.078-5.82 3.28-12.487 7.112-8.078 4.644-12.227 7.09-12.449 7.32-.19.225-.34.482-.438.76-.167.564-.179 82.985-.01 83.578.061.23.26.568.44.754.436.46 48.664 28.19 49.25 28.324.272.065.577.054.88-.03.658-.165 48.76-27.834 49.188-28.286.175-.195.375-.532.44-.761.084-.273.115-4.58.115-13.655v-13.26l11.726-6.735c11.056-6.357 11.733-6.755 12.017-7.191l.29-.47V43.287c0-15.548.03-14.673-.585-15.235-.165-.146-5.798-3.433-12.53-7.31L100.89 13.71h-1.359l-11.963 6.87c-6.586 3.788-12.184 7.027-12.457 7.203-.272.18-.597.512-.73.753l-.242.417-.054 13.455-.048 13.46-9.879 5.69c-5.434 3.124-9.957 5.71-10.053 5.734-.175.049-.187-1.232-.187-25.966V15.293l-.26-.447c-.326-.545 1.136.324-13.544-8.114C27.803-.348 28.098-.2 27.27.11zm11.317 10.307c5.15 2.955 9.364 5.4 9.364 5.43 0 .031-4.516 2.641-10.035 5.813l-10.041 5.765-10.023-5.764c-5.507-3.173-10.02-5.783-10.02-5.814 0-.03 4.505-2.64 10.013-5.805l9.999-5.752.69.376c3.357 1.907 6.708 3.824 10.053 5.751zm71.668 13.261c5.422 3.122 9.908 5.702 9.95 5.744.114.103-19.774 11.535-20.046 11.523-.272-.008-19.915-11.335-19.907-11.473.01-.157 19.773-11.527 19.973-11.496.091.022 4.607 2.59 10.03 5.702zM16.3 25.328l9.558 5.503.055 27.247.05 27.252.233.368c.122.194.352.459.52.581.158.115 5.477 3.146 11.818 6.724l11.52 6.506v11.527c0 6.326-.043 11.516-.097 11.516-.041 0-10-5.699-22.124-12.676L5.793 97.201l-.03-38.966-.019-38.954.49.271c.283.15 4.807 2.748 10.065 5.775zm33.754 19.18v25.109l-.387.253c-.525.332-19.667 11.335-19.732 11.335-.03 0-.054-11.336-.054-25.193l.012-25.182 10-5.752c5.499-3.165 10.034-5.733 10.088-5.714.039.024.073 11.34.073 25.144zm38.15-5.775 10.023 5.763V55.92c0 10.838-.011 11.42-.176 11.357-.107-.041-4.642-2.64-10.083-5.774l-9.91-5.69v-11.42c0-6.287.032-11.424.062-11.424.043 0 4.577 2.592 10.084 5.764zm34.164 5.587c0 6.254-.042 11.412-.084 11.462-.072.115-19.896 11.538-20.022 11.538-.031 0-.062-5.135-.062-11.423v-11.42l10-5.756c5.507-3.16 10.042-5.752 10.084-5.752.053 0 .084 5.105.084 11.351zM95.993 70.933 52.005 96.04 32.056 84.693S76 59.277 76.176 59.343zm2.215 14.827-.034 11.442-22.028 12.676c-12.12 6.976-22.082 12.675-22.132 12.675-.053 0-.095-4.658-.095-11.516V99.51l22.08-12.592c12.132-6.923 22.101-12.59 22.154-12.602.043 0 .062 5.148.054 11.443z"/>
+</symbol>
+<symbol id="icon-python" viewBox="0 0 128 128">
+<linearGradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"/><stop offset="1" stop-color="#306998"/></linearGradient>
+<linearGradient id="python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"/><stop offset="1" stop-color="#FFE873"/></linearGradient>
+<path fill="#3776AB" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008z" transform="translate(0 10.26)"/>
+<circle cx="50" cy="24.5" r="4.6" fill="#ffffff"/>
+<path fill="#FFD43B" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268z" transform="translate(0 10.26)"/>
+<circle cx="77.8" cy="102.9" r="4.6" fill="#ffffff"/>
+</symbol>
+<symbol id="icon-dart" viewBox="0 0 128 128">
+<path fill="#00c4b3" d="M35.2 34.9l-8.3-8.3v59.7l.1 2.8c0 1.3.2 2.8.7 4.3l65.6 23.1 16.3-7.2-74.4-74.4z"/><path d="M27.7 93.4zm81.9 15.9l-16.3 7.2-65.4-23.1c1.3 4.8 4 10.1 7 13.2l21.3 21.2 47.6.1 5.8-18.6z" fill="#22d3c5"/><path fill="#0075c9" d="M1.7 65.1C-.4 67.3.7 72 4 75.5l14.7 14.8 9.2 3.3c-.3-1.5-.7-3-.7-4.3l-.1-2.8-.2-59.8m82.7 82.6l7.2-16.4-23-65.6c-1.5-.3-3-.6-4.3-.7l-2.9-.1-59.6.1"/><path d="M93.6 27.3c.2 0 .2 0 0 0 .2 0 .2 0 0 0zm16 82l17.7-5.8V54.8l-20.4-20.5c-3-3-8.3-5.8-13.2-7l23.1 65.6" fill="#00a8e1"/><path fill="#00c4b3" d="M90.5 18.2L75.7 3.5c-3.4-3.4-8-4.4-10.4-2.3L26.9 26.6h59.5l2.9.1c1.3 0 2.8.2 4.3.7l-3.1-9.2z"/>
+</symbol>
+<symbol id="icon-flutter" viewBox="0 0 128 128">
+<g fill="#3FB6D3"><path d="M12.3 64.2L76.3 0h39.4L32.1 83.6zM76.3 128h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"/></g><path fill="#27AACD" d="M81.6 93.9l-20-20-19.4 19.6 19.4 19.6z"/><path fill="#19599A" d="M115.7 128L81.6 93.9l-20 19.2L76.3 128z"/><linearGradient id="flutter-original-a" gradientUnits="userSpaceOnUse" x1="59.365" y1="116.36" x2="86.825" y2="99.399"><stop offset="0" stop-color="#1b4e94"/><stop offset=".63" stop-color="#1a5497"/><stop offset="1" stop-color="#195a9b"/></linearGradient><path fill="url(#flutter-original-a)" d="M61.6 113.1l30.8-8.4-10.8-10.8z"/>
+</symbol>
+<symbol id="icon-sqlite" viewBox="0 0 128 128">
+<defs><linearGradient id="sqlite-original-a" x1="-15.615" x2="-6.741" y1="-9.108" y2="-9.108" gradientTransform="rotate(90 -90.486 64.634) scale(9.2712)" gradientUnits="userSpaceOnUse"><stop stop-color="#95d7f4" offset="0"/><stop stop-color="#0f7fcc" offset=".92"/><stop stop-color="#0f7fcc" offset="1"/></linearGradient></defs><path d="M69.5 99.176c-.059-.73-.094-1.2-.094-1.2S67.2 83.087 64.57 78.642c-.414-.707.043-3.594 1.207-7.88.68 1.169 3.54 6.192 4.118 7.81.648 1.824.78 2.347.78 2.347s-1.57-8.082-4.144-12.797a162.286 162.286 0 012.004-6.265c.973 1.71 3.313 5.859 3.828 7.3.102.293.192.543.27.774.023-.137.05-.274.074-.414-.59-2.504-1.75-6.86-3.336-10.082 3.52-18.328 15.531-42.824 27.84-53.754H16.9c-5.387 0-9.789 4.406-9.789 9.789v88.57c0 5.383 4.406 9.789 9.79 9.789h52.897a118.657 118.657 0 01-.297-14.652" fill="#0b7fcc"/><path d="M65.777 70.762c.68 1.168 3.54 6.188 4.117 7.809.649 1.824.781 2.347.781 2.347s-1.57-8.082-4.144-12.797a164.535 164.535 0 012.004-6.27c.887 1.567 2.922 5.169 3.652 6.872l.082-.961c-.648-2.496-1.633-5.766-2.898-8.328 3.242-16.871 13.68-38.97 24.926-50.898H16.899a6.94 6.94 0 00-6.934 6.933v82.11c17.527-6.731 38.664-12.88 56.855-12.614-.672-2.605-1.441-4.96-2.25-6.324-.414-.707.043-3.597 1.207-7.879" fill="url(#sqlite-original-a)"/><path d="M115.95 2.781c-5.5-4.906-12.164-2.933-18.734 2.899a44.347 44.347 0 00-2.914 2.859c-11.25 11.926-21.684 34.023-24.926 50.895 1.262 2.563 2.25 5.832 2.894 8.328.168.64.32 1.242.442 1.754.285 1.207.437 1.996.437 1.996s-.101-.383-.515-1.582c-.078-.23-.168-.484-.27-.773-.043-.125-.105-.274-.172-.434-.734-1.703-2.765-5.305-3.656-6.867-.762 2.25-1.437 4.36-2.004 6.265 2.578 4.715 4.149 12.797 4.149 12.797s-.137-.523-.782-2.347c-.578-1.621-3.441-6.64-4.117-7.809-1.164 4.281-1.625 7.172-1.207 7.88.809 1.362 1.574 3.722 2.25 6.323 1.524 5.867 2.586 13.012 2.586 13.012s.031.469.094 1.2a118.653 118.653 0 00.297 14.651c.504 6.11 1.453 11.363 2.664 14.172l.828-.449c-1.781-5.535-2.504-12.793-2.188-21.156.48-12.793 3.422-28.215 8.856-44.289 9.191-24.27 21.938-43.738 33.602-53.035-10.633 9.602-25.023 40.684-29.332 52.195-4.82 12.891-8.238 24.984-10.301 36.574 3.55-10.863 15.047-15.53 15.047-15.53s5.637-6.958 12.227-16.888c-3.95.903-10.43 2.442-12.598 3.352-3.2 1.344-4.067 1.8-4.067 1.8s10.371-6.312 19.27-9.171c12.234-19.27 25.562-46.648 12.141-58.621" fill="#003956"/>
+</symbol>
+<symbol id="icon-mysql" viewBox="0 0 128 128">
+<path fill="#00618A" d="M117.688 98.242c-6.973-.191-12.297.461-16.852 2.379-1.293.547-3.355.559-3.566 2.18.711.746.82 1.859 1.387 2.777 1.086 1.754 2.922 4.113 4.559 5.352 1.789 1.348 3.633 2.793 5.551 3.961 3.414 2.082 7.223 3.27 10.504 5.352 1.938 1.23 3.859 2.777 5.75 4.164.934.684 1.563 1.75 2.773 2.18v-.195c-.637-.812-.801-1.93-1.387-2.777l-2.578-2.578c-2.52-3.344-5.719-6.281-9.117-8.719-2.711-1.949-8.781-4.578-9.91-7.73l-.199-.199c1.922-.219 4.172-.914 5.949-1.391 2.98-.797 5.645-.59 8.719-1.387l4.164-1.187v-.793c-1.555-1.594-2.664-3.707-4.359-5.152-4.441-3.781-9.285-7.555-14.273-10.703-2.766-1.746-6.184-2.883-9.117-4.363-.988-.496-2.719-.758-3.371-1.586-1.539-1.961-2.379-4.449-3.566-6.738-2.488-4.793-4.93-10.023-7.137-15.066-1.504-3.437-2.484-6.828-4.359-9.91-9-14.797-18.687-23.73-33.695-32.508-3.195-1.867-7.039-2.605-11.102-3.57l-6.543-.395c-1.332-.555-2.715-2.184-3.965-2.977C16.977 3.52 4.223-3.312.539 5.672-1.785 11.34 4.016 16.871 6.09 19.746c1.457 2.012 3.32 4.273 4.359 6.539.688 1.492.805 2.984 1.391 4.559 1.438 3.883 2.695 8.109 4.559 11.695.941 1.816 1.98 3.727 3.172 5.352.727.996 1.98 1.438 2.18 2.973-1.227 1.715-1.297 4.375-1.984 6.543-3.098 9.77-1.926 21.91 2.578 29.137 1.383 2.223 4.641 6.98 9.117 5.156 3.918-1.598 3.043-6.539 4.164-10.902.254-.988.098-1.715.594-2.379v.199l3.57 7.133c2.641 4.254 7.324 8.699 11.297 11.699 2.059 1.555 3.68 4.242 6.344 5.152v-.199h-.199c-.516-.805-1.324-1.137-1.98-1.781-1.551-1.523-3.277-3.414-4.559-5.156-3.613-4.902-6.805-10.27-9.711-15.855-1.391-2.668-2.598-5.609-3.77-8.324-.453-1.047-.445-2.633-1.387-3.172-1.281 1.988-3.172 3.598-4.164 5.945-1.582 3.754-1.789 8.336-2.375 13.082-.348.125-.195.039-.398.199-2.762-.668-3.73-3.508-4.758-5.949-2.594-6.164-3.078-16.09-.793-23.191.59-1.836 3.262-7.617 2.18-9.316-.516-1.691-2.219-2.672-3.172-3.965-1.18-1.598-2.355-3.703-3.172-5.551-2.125-4.805-3.113-10.203-5.352-15.062-1.07-2.324-2.875-4.676-4.359-6.738-1.645-2.289-3.484-3.977-4.758-6.742-.453-.984-1.066-2.559-.398-3.566.215-.684.516-.969 1.191-1.191 1.148-.887 4.352.297 5.547.793 3.18 1.32 5.832 2.578 8.527 4.363 1.289.855 2.598 2.512 4.16 2.973h1.785c2.789.641 5.914.195 8.523.988 4.609 1.402 8.738 3.582 12.488 5.949 11.422 7.215 20.766 17.48 27.156 29.734 1.027 1.973 1.473 3.852 2.379 5.945 1.824 4.219 4.125 8.559 5.941 12.688 1.816 4.113 3.582 8.27 6.148 11.695 1.348 1.801 6.551 2.766 8.918 3.766 1.66.699 4.379 1.43 5.949 2.379 3 1.809 5.906 3.965 8.723 5.945 1.402.992 5.73 3.168 5.945 4.957zm-88.605-75.52c-1.453-.027-2.48.156-3.566.395v.199h.195c.695 1.422 1.918 2.34 2.777 3.566l1.98 4.164.199-.195c1.227-.867 1.789-2.25 1.781-4.363-.492-.52-.562-1.164-.992-1.785-.562-.824-1.66-1.289-2.375-1.98zm0 0"/>
+</symbol>
+<symbol id="icon-crud" viewBox="0 0 128 128">
+<linearGradient id="crudDiskTop" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#467c5a" />
+<stop offset="100%" stop-color="#2d5a3f" />
+</linearGradient>
+<linearGradient id="crudDiskBody" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#1d3d2a" />
+<stop offset="50%" stop-color="#2d5a3f" />
+<stop offset="100%" stop-color="#1b3927" />
+</linearGradient>
+<!-- Layer 3 (Bottom Disc) -->
+<path fill="url(#crudDiskBody)" d="M24 74 c0 13 18 24 40 24 s40 -11 40 -24 v16 c0 13 -18 24 -40 24 s-40 -11 -40 -24 Z" />
+<ellipse cx="64" cy="74" rx="40" ry="14" fill="#1b3927" opacity="0.5" />
+<circle cx="36" cy="83" r="2.5" fill="#4ade80" />
+<circle cx="44" cy="84.5" r="2.5" fill="#a7f3d0" opacity="0.8" />
+<!-- Layer 2 (Middle Disc) -->
+<path fill="url(#crudDiskBody)" d="M24 48 c0 13 18 24 40 24 s40 -11 40 -24 v16 c0 13 -18 24 -40 24 s-40 -11 -40 -24 Z" />
+<ellipse cx="64" cy="48" rx="40" ry="14" fill="#1b3927" opacity="0.5" />
+<circle cx="36" cy="57" r="2.5" fill="#4ade80" />
+<circle cx="44" cy="58.5" r="2.5" fill="#a7f3d0" opacity="0.8" />
+<!-- Layer 1 (Top Disc) -->
+<path fill="url(#crudDiskBody)" d="M24 22 c0 13 18 24 40 24 s40 -11 40 -24 v16 c0 13 -18 24 -40 24 s-40 -11 -40 -24 Z" />
+<ellipse cx="64" cy="22" rx="40" ry="14" fill="url(#crudDiskTop)" />
+<ellipse cx="64" cy="22" rx="33" ry="10" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+<circle cx="36" cy="31" r="2.5" fill="#4ade80" />
+<circle cx="44" cy="32.5" r="2.5" fill="#a7f3d0" opacity="0.8" />
+<!-- Action Badge in Lower Right (CRUD Data Cycle) -->
+<circle cx="92" cy="92" r="23" fill="#ffffff" />
+<circle cx="92" cy="92" r="20" fill="#1e3d2b" />
+<path d="M 82 86 A 11 11 0 0 1 100 84" fill="none" stroke="#4ade80" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="100,81 104,86 98,88" fill="#4ade80" />
+<path d="M 102 98 A 11 11 0 0 1 84 100" fill="none" stroke="#a7f3d0" stroke-width="2.2" stroke-linecap="round" />
+<polygon points="84,103 80,98 86,96" fill="#a7f3d0" />
+<text x="92" y="95" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.6">CRUD</text>
+</symbol>
+</defs>
+</svg>
+    <header class="site-header">
+        <a class="brand" href="#home">Claudia<span>.Dev</span></a>
+        <nav class="site-nav" aria-label="Navigasi utama">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#journey">Journey</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>PORTFOLIO</h1>
+        <p class="hero-name">Cindy Claudia Arsyaningrum</p>
+        <p class="hero-tagline">RPL Student &amp; Beginner Developer</p>
+        <a href="#projects" class="btn-primary">Lihat Project</a>
+        <div class="scroll-indicator">
+            <p>SCROLL</p>
+            <span aria-hidden="true"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <!-- Necklace / Lanyard Photo Badge -->
+            <div class="necklace-card-wrapper" aria-label="Kartu pengenal Cindy Claudia Arsyaningrum">
+                <!-- Tali Kalung Lanyard Berbentuk V + Logam Lobster Clasp (SVG) -->
+                <div class="necklace-strap-container" aria-hidden="true">
+                    <svg class="necklace-lanyard-svg" viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <!-- Gradient Tali Lanyard Kiri -->
+                            <linearGradient id="strapGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#142c1d" />
+                                <stop offset="50%" stop-color="#2d5a3f" />
+                                <stop offset="100%" stop-color="#1d3d2a" />
+                            </linearGradient>
+                            <!-- Gradient Tali Lanyard Kanan -->
+                            <linearGradient id="strapGradR" x1="100%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#142c1d" />
+                                <stop offset="50%" stop-color="#356647" />
+                                <stop offset="100%" stop-color="#1d3d2a" />
+                            </linearGradient>
+                            <!-- Pola Anyaman Tali (Ribbon Weave) -->
+                            <pattern id="lanyardPattern" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                                <line x1="0" y1="0" x2="0" y2="6" stroke="rgba(255,255,255,0.18)" stroke-width="2" />
+                            </pattern>
+                            <!-- Gradient Logam Chrome Clasp Hook -->
+                            <linearGradient id="metalChrome" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#8c9890" />
+                                <stop offset="30%" stop-color="#eaf0ec" />
+                                <stop offset="55%" stop-color="#bcc8bf" />
+                                <stop offset="75%" stop-color="#ffffff" />
+                                <stop offset="100%" stop-color="#728076" />
+                            </linearGradient>
+                            <!-- Drop Shadow Tali -->
+                            <filter id="lanyardShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feDropShadow dx="0" dy="4" stdDeviation="3" flood-opacity="0.25" />
+                            </filter>
+                        </defs>
+
+                        <!-- Tali Lanyard Berbentuk V -->
+                        <g filter="url(#lanyardShadow)">
+                            <!-- Tali Kalung Kiri (V-Shape dari Kiri Atas menuju Tengah Bawah) -->
+                            <polygon points="16,0 40,0 120,82 100,82" fill="url(#strapGradL)" />
+                            <polygon points="16,0 40,0 120,82 100,82" fill="url(#lanyardPattern)" opacity="0.65" />
+                            <line x1="19" y1="0" x2="103" y2="82" stroke="rgba(255,255,255,0.28)" stroke-width="1" stroke-dasharray="3,2" />
+                            <line x1="37" y1="0" x2="117" y2="82" stroke="rgba(0,0,0,0.3)" stroke-width="1" />
+
+                            <!-- Tali Kalung Kanan (V-Shape dari Kanan Atas menuju Tengah Bawah) -->
+                            <polygon points="204,0 180,0 100,82 120,82" fill="url(#strapGradR)" />
+                            <polygon points="204,0 180,0 100,82 120,82" fill="url(#lanyardPattern)" opacity="0.65" />
+                            <line x1="201" y1="0" x2="117" y2="82" stroke="rgba(255,255,255,0.28)" stroke-width="1" stroke-dasharray="3,2" />
+                            <line x1="183" y1="0" x2="103" y2="82" stroke="rgba(0,0,0,0.3)" stroke-width="1" />
+                        </g>
+
+                        <!-- Klem Logam Pengikat Ujung Tali (Metal Crimp) -->
+                        <rect x="94" y="75" width="32" height="11" rx="2.5" fill="url(#metalChrome)" stroke="#58675e" stroke-width="0.8" />
+                        <line x1="98" y1="78" x2="98" y2="83" stroke="#48564e" stroke-width="1" />
+                        <line x1="122" y1="78" x2="122" y2="83" stroke="#48564e" stroke-width="1" />
+
+                        <!-- Cincin Swivel (Oval Ring) -->
+                        <ellipse cx="110" cy="91" rx="9" ry="5.5" fill="none" stroke="url(#metalChrome)" stroke-width="3" />
+
+                        <!-- Sambungan Putar Logam (Swivel Barrel) -->
+                        <rect x="106.5" y="94.5" width="7" height="6.5" rx="1.5" fill="url(#metalChrome)" stroke="#58675e" stroke-width="0.7" />
+
+                        <!-- Logam Pengait Karabiner / Lobster Clasp (Persis seperti Foto 2) -->
+                        <path d="M 107,101 C 104,101 102,103 102,107 C 102,115 107,121 110,121 C 113,121 118,115 118,107 C 118,103 116,101 113,101 Z" fill="url(#metalChrome)" stroke="#58675e" stroke-width="0.8" />
+                        <ellipse cx="110" cy="110" rx="4" ry="5" fill="#f4f2e9" stroke="#728076" stroke-width="0.8" />
+                        <!-- Tuas Trigger Pengait -->
+                        <path d="M 102,105 L 98,103.5 L 99,108 Z" fill="url(#metalChrome)" stroke="#58675e" stroke-width="0.6" />
+                    </svg>
+                </div>
+
+                <!-- Kartu ID / Badge Frame -->
+                <div class="necklace-badge">
+                    <div class="badge-slot" aria-hidden="true"></div>
+
+                    <!-- Header Kartu ID -->
+                    <div class="badge-header">
+                        <div class="badge-org">
+                            <span class="badge-tag">SMKN 6 JEMBER</span>
+                            <span class="badge-subtag">RPL - 2024</span>
+                        </div>
+                        <span class="badge-logo-icon" title="SMKN 6 Jember">🌱</span>
+                    </div>
+
+                    <!-- Side Role Banner (Seperti Pita 'SEKRETARIS' di Foto 2) -->
+                    <div class="badge-side-banner" aria-hidden="true">
+                        <span>REKAYASA PERANGKAT LUNAK</span>
+                    </div>
+
+                    <!-- Frame Foto ID Card (Full, Polaroid-Style seperti di Foto 2) -->
+                    <div class="badge-photo-card">
+                        <div class="photo-card-header">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="badge-photo-wrapper">
+                            <picture>
+                                <source srcset="Assets/cindy.webp" type="image/webp">
+                                <img src="Assets/cindy.png" alt="Foto Profil Cindy Claudia Arsyaningrum" class="badge-photo" id="badge-photo" width="900" height="1230" loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                        <div class="photo-card-name">Cindy Claudia Arsyaningrum</div>
+                    </div>
+
+                    <!-- Detail & Kelas -->
+                    <div class="badge-details">
+                        <span class="badge-class">X RPL</span>
+                    </div>
+
+                    <!-- Footer & Barcode Motif -->
+                    <div class="badge-footer">
+                        <div class="badge-batik-motif" aria-hidden="true"></div>
+                        <div class="badge-barcode" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                        <span class="badge-code">NIS: 2223.10.142 • RPL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="about-content">
+                <p>Perkenalkan, aku <strong>Cindy Claudia Arsyaningrum</strong>, siswi <strong>SMKN 6 Jember</strong> jurusan Rekayasa Perangkat Lunak.</p>
+                <p>Saya merupakan siswi SMK Negeri 6 Jember jurusan Rekayasa Perangkat Lunak. Saya tertarik dengan dunia teknologi dan sedang belajar membuat website, aplikasi, serta memahami dasar pemrograman.</p>
+                
+                <table class="info-table">
+                    <tr>
+                        <td>Nama</td>
+                        <td>Cindy Claudia Arsyaningrum</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>Siswi SMKN 6 Jember</td>
+                    </tr>
+                    <tr>
+                        <td>Jurusan</td>
+                        <td>Rekayasa Perangkat Lunak (RPL)</td>
+                    </tr>
+                    <tr>
+                        <td>Kelas</td>
+                        <td>X RPL</td>
+                    </tr>
+                </table>
+
+                <div class="quote-box">
+                    <strong>💡 Alasan Memilih RPL</strong>
+                    <p style="margin-top: 10px; margin-bottom: 0;">"Saya memilih jurusan RPL karena tertarik dengan teknologi dan ingin belajar membuat aplikasi serta program."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal-section">
+        <div class="clipboard-container">
+            <div class="clipboard-clip" aria-hidden="true"></div>
+            <div class="clipboard-paper">
+                <h2 class="section-title">My Projects ✦</h2>
+                <p class="clipboard-subtitle">Karya &amp; project yang sedang saya persiapkan di Kelas 10 RPL 💻</p>
+
+                <div class="coming-soon-box">
+                    <div class="coming-soon-icon" aria-hidden="true">⏳</div>
+                    <div class="coming-soon-stamp">COMING SOON</div>
+                    <div class="coming-soon-badge">
+                        <span class="wip-pulse" aria-hidden="true"></span>
+                        <span>Dalam Tahap Belajar &amp; Eksplorasi Coding</span>
+                    </div>
+                    <p class="coming-soon-desc">
+                        Project karya saya sedang dalam proses pembuatan selama belajar di <strong>SMKN 6 Jember</strong>. Hasil tugas dan latihan sekolah akan segera dipajang di sini!
+                    </p>
+                    <a href="#journey" class="btn-small coming-soon-btn">Lihat Catatan Belajar ↓</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal-section">
+        <div class="skills-container">
+            <div class="skills-heading">
+                <h2 class="section-title">My Skills</h2>
+                <p>Kemampuan yang sedang saya pelajari sebagai siswi RPL 🌱</p>
+            </div>
+
+            <div class="skill-window">
+                <div class="window-header">
+                    <div class="window-title">
+                        <span aria-hidden="true">📁</span>
+                        <span>skill_cindy.exe</span>
+                    </div>
+                    <div class="window-buttons">
+                        <span class="window-control minimize" aria-hidden="true">─</span>
+                        <span class="window-control maximize" aria-hidden="true">□</span>
+                        <span class="window-control close" aria-hidden="true">×</span>
+                    </div>
+                </div>
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h3>🌐 Web Development</h3>
+                        <div class="skill-folder-grid">
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-html5"></use></svg></span>
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-level learning">Learning</span>
+                            </div>
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-css3"></use></svg></span>
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-level learning">Learning</span>
+                            </div>
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-javascript"></use></svg></span>
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level beginner">Beginner</span>
+                            </div>
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-php"></use></svg></span>
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-level beginner">Beginner</span>
+                            </div>
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-laravel"></use></svg></span>
+                                <span class="skill-name">Laravel</span>
+                                <span class="skill-level beginner">Beginner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>💻 Programming</h3>
+                        <div class="skill-folder-grid">
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-python"></use></svg></span>
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level beginner">Beginner</span>
+                            </div>
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-dart"></use></svg></span>
+                                <span class="skill-name">Dart</span>
+                                <span class="skill-level beginner">Beginner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>📱 Mobile Development</h3>
+                        <div class="skill-folder-grid">
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-flutter"></use></svg></span>
+                                <span class="skill-name">Flutter</span>
+                                <span class="skill-level beginner">Beginner</span>
+                            </div>
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-sqlite"></use></svg></span>
+                                <span class="skill-name">SQLite</span>
+                                <span class="skill-level beginner">Beginner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>🗄️ Database & CRUD</h3>
+                        <div class="skill-folder-grid">
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-mysql"></use></svg></span>
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-level beginner">Beginner</span>
+                            </div>
+                            <div class="skill-folder">
+                                <span class="skill-icon" aria-hidden="true"><svg class="tech-icon"><use href="#icon-crud"></use></svg></span>
+                                <span class="skill-name">CRUD</span>
+                                <span class="skill-level learning">Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Journey -->
+    <section id="journey" class="reveal-section">
+        <h2 class="section-title">My Learning Journey</h2>
+        <p class="section-subtitle">Catatan tahapan belajar saya sebagai siswi Kelas 10 RPL yang tertata di sticky notes 📌</p>
+        
+        <div class="sticky-board-wrapper">
+            <div class="sticky-board-controls">
+                <span class="sticky-hint">📌 Geser atau drag sticky note untuk melihat perjalanan</span>
+            </div>
+            <div class="sticky-notes-track" id="twine-track">
+                <!-- Sticky Note 1 -->
+                <div class="sticky-note note-color-mint note-tilt-1">
+                    <div class="sticky-tape" aria-hidden="true"></div>
+                    <div class="sticky-paper">
+                        <h3 class="sticky-title">🏫 Orientasi & Masuk RPL</h3>
+                        <p class="sticky-subtitle">Awal Langkah di SMKN 6 Jember</p>
+                        <ul class="sticky-list">
+                            <li>Mengenal lingkungan jurusan Rekayasa Perangkat Lunak.</li>
+                            <li>Mempelajari pengantar sistem komputer & konsep software.</li>
+                            <li>Membuat game interaktif sederhana menggunakan Scratch.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sticky Note 2 -->
+                <div class="sticky-note note-color-yellow note-tilt-2">
+                    <div class="sticky-tape" aria-hidden="true"></div>
+                    <div class="sticky-paper">
+                        <h3 class="sticky-title">🧠 Logika & Algoritma</h3>
+                        <p class="sticky-subtitle">Dasar Pola Pikir Pemrograman</p>
+                        <ul class="sticky-list">
+                            <li>Belajar menyusun alur logika dengan flowchart & pseudocode.</li>
+                            <li>Mengenal variabel, tipe data, dan logika percabangan.</li>
+                            <li>Latihan memecahkan studi kasus coding dasar bertahap.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sticky Note 3 -->
+                <div class="sticky-note note-color-blue note-tilt-3">
+                    <div class="sticky-tape" aria-hidden="true"></div>
+                    <div class="sticky-paper">
+                        <h3 class="sticky-title">🌐 Fondasi Web Dasar</h3>
+                        <p class="sticky-subtitle">Belajar HTML5 & CSS3</p>
+                        <ul class="sticky-list">
+                            <li>Memahami struktur semantik halaman web dengan HTML5.</li>
+                            <li>Belajar styling warna, tipografi, dan layout box model dengan CSS.</li>
+                            <li>Mulai membuat halaman portofolio & web statis sederhana.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sticky Note 4 -->
+                <div class="sticky-note note-color-pink note-tilt-4">
+                    <div class="sticky-tape" aria-hidden="true"></div>
+                    <div class="sticky-paper">
+                        <h3 class="sticky-title">💻 Eksplorasi Coding & Web</h3>
+                        <p class="sticky-subtitle">Interaktivitas & Tools Coding Saat Ini</p>
+                        <ul class="sticky-list">
+                            <li>Mulai mengenal dasar JavaScript untuk interaktivitas tombol & form.</li>
+                            <li>Membiasakan diri menggunakan code editor VS Code.</li>
+                            <li>Latihan membuat mini project web tugas sekolah.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sticky Note 5 -->
+                <div class="sticky-note note-color-sage note-tilt-5">
+                    <div class="sticky-tape" aria-hidden="true"></div>
+                    <div class="sticky-paper">
+                        <h3 class="sticky-title">🎯 Rencana Belajar Lanjutan</h3>
+                        <p class="sticky-subtitle">Fokus Mengasah Skill & Project Baru</p>
+                        <ul class="sticky-list">
+                            <li>Memperdalam kerapian kode dan pemahaman responsive web.</li>
+                            <li>Mempelajari materi pemrograman lanjutan dan backend/database.</li>
+                            <li>Aktif mengeksplorasi project latihan mandiri & tugas praktikum baru.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal-section">
+        <h2 class="section-title">Let's Connect! 💌</h2>
+        <p class="section-subtitle">Tertarik untuk berkolaborasi, berdiskusi seputar project, atau sekadar bertukar sapa? Kirim pesan langsung lewat channel di bawah ini ya!</p>
+        
+        <div class="contact-postcard">
+            <!-- Postcard Top Header / Cap & Prangko -->
+            <div class="postcard-header">
+                <div class="postcard-meta">
+                    <span class="airmail-badge">✦ AIRMAIL / SURAT POS</span>
+                    <span class="postcard-recipient">Kepada: <strong>Cindy Claudia Arsyaningrum (X RPL)</strong></span>
+                </div>
+                
+                <div class="postcard-stamp-area" aria-hidden="true">
+                    <div class="postmark-seal">
+                        <span class="postmark-city">JEMBER</span>
+                        <span class="postmark-date">2024</span>
+                        <span class="postmark-status">TERKIRIM</span>
+                    </div>
+                    <div class="postage-stamp">
+                        <span class="stamp-icon">🌱</span>
+                        <span class="stamp-label">SMKN 6</span>
+                        <span class="stamp-price">Rp 3000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Clickable Contact Channels -->
+            <div class="contact-channels">
+                <!-- Email Channel -->
+                <a href="mailto:andriansaputri378@gmail.com" class="channel-card email-card">
+                    <div class="channel-icon-wrapper">
+                        <span class="channel-icon">📧</span>
+                    </div>
+                    <div class="channel-info">
+                        <span class="channel-title">Email Pribadi</span>
+                        <span class="channel-detail">cindyclaudiaarsyaningrum@gmail.com</span>
+                    </div>
+                    <span class="channel-arrow">Kirim Email ↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">ANDRIAN<span>.DEV</span></a>
+                <p class="footer-desc">Siswi SMKN 6 Jember jurusan Rekayasa Perangkat Lunak. Sedang belajar &amp; bertumbuh membuat website, aplikasi, serta memahami dunia teknologi.</p>
+            </div>
+            <div class="footer-nav">
+                <span class="footer-nav-title">Navigasi Cepat</span>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#journey">Journey</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Andrian Saputri — Rekayasa Perangkat Lunak SMKN 6 Jember.</p>
+            <a href="#home" class="back-to-top" aria-label="Kembali ke atas">Ke Atas ↑</a>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
